@@ -1,0 +1,138 @@
+body {
+    background-color: #f0f0f0;
+    /* Set background color */
+}
+
+.navbar {
+    background-color: #6c5ce7;
+    /* Set navbar background color */
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    /* Add blurred border */
+    border-radius: 10px;
+    /* Add rounded corners */
+}
+
+.navbar-brand {
+    margin: 0 auto;
+    /* Center logo */
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7dc6f;
+    /* Set logo text color */
+}
+
+.navbar-nav {
+    margin-top: 20px;
+    /* Add space between logo and menu */
+    text-align: center;
+    /* Center menu */
+    flex-direction: column;
+    /* Stack menu items vertically */
+    align-items: center;
+    /* Center menu items horizontally */
+}
+
+.nav-item {
+    margin: 10px 0;
+    /* Add space between menu items */
+}
+
+.nav-link {
+    color: #f7dc6f;
+    /* Set menu text color */
+    font-weight: 500;
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.nav-link:hover {
+    color: #fff;
+    /* Change menu text color on hover */
+}
+
+/* Add media query to make menu horizontal on large screens */
+@media (min-width: 992px) {
+    .navbar-nav {
+        flex-direction: row;
+        /* Make menu horizontal */
+        justify-content: center;
+        /* Center menu items horizontally */
+    }
+
+    .nav-item {
+        margin: 0 20px;
+        /* Add space between menu items */
+    }
+}
+
+.banner {
+    background-color: #f7f7f7;
+    /* Set background color */
+    padding: 50px 0;
+    /* Add padding */
+    text-align: center;
+    /* Center text */
+}
+
+.banner img {
+    width: 100%;
+    /* Make images full-width */
+    height: 300px;
+    /* Set image height */
+    object-fit: cover;
+    /* Make images cover the entire area */
+    border-radius: 10px;
+    /* Add rounded corners */
+}
+
+.banner-text {
+    position: absolute;
+    /* Position text absolutely */
+    top: 50%;
+    /* Center text vertically */
+    left: 50%;
+    /* Center text horizontally */
+    transform: translate(-50%, -50%);
+    /* Center text */
+    color: #333;
+    /* Set text color */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add text shadow */
+}
+
+.banner-text h1 {
+    font-size: 36px;
+    /* Set heading font size */
+    font-weight: bold;
+    /* Set heading font weight */
+}
+
+.banner-text p {
+    font-size: 18px;
+    /* Set paragraph font size */
+    margin-bottom: 20px;
+    /* Add space between paragraph and button */
+}
+
+.banner-text button {
+    background-color: #6c5ce7;
+    /* Set button background color */
+    color: #fff;
+    /* Set button text color */
+    padding: 10px 20px;
+    /* Add button padding */
+    border: none;
+    /* Remove button border */
+    border-radius: 10px;
+    /* Add button rounded corners */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+.banner-text button:hover {
+    background-color: #5c4ec7;
+    /* Change button background color on hover */
+}
